@@ -4,7 +4,9 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "neopixel": "github:microsoft/pxt-neopixel#v0.7.5",
+        "pxt-servo-pwm": "github:TomasKazda/pxt-servo-pwm#432fced65423b6f3880e374b6a1a54aabd539b07"
     },
     "files": [
         "main.blocks",

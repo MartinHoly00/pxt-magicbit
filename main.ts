@@ -3,7 +3,7 @@
 
 // neopixel - ovládání led diod 
 
-/* let strip = neopixel.create(DigitalPin.P16, 32, NeoPixelMode.RGB)
+let strip = neopixel.create(DigitalPin.P16, 32, NeoPixelMode.RGB)
 
 strip.showRainbow(1,360)
 
@@ -18,11 +18,13 @@ basic.forever(function() {
 input.onButtonPressed(Button.A, function() {
     strip.clear()
     strip.show()
-}) */
+}) 
+
+
 
 //ultrazvukový senzor
 
-function ping(trig: DigitalPin, echo: DigitalPin, maxCmDistance = 500): number {
+/* function ping(trig: DigitalPin, echo: DigitalPin, maxCmDistance = 500): number {
     pins.setPull(trig, PinPullMode.PullNone)
     pins.digitalWritePin(trig, 0)
     control.waitMicros(2)
@@ -41,4 +43,4 @@ basic.forever(function () {
     let data = ping(DigitalPin.P8, DigitalPin.P15)
     console.logValue("echo time", data)
     basic.pause(50)
-})
+}) */
